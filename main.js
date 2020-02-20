@@ -1,5 +1,4 @@
 l = 0
-life = 5
 function right() {
     var bg = document.getElementById('bg')
     bg.style.backgroundPositionX = l + 'px'
@@ -12,7 +11,7 @@ function left() {
     l += 1
 }
 
-function up() {
+function main() {
 
     var touche = event.keyCode;
     var nom = String.fromCharCode(touche);
@@ -29,9 +28,9 @@ function up() {
         }, 200)
         character.setAttribute('src', 'assets/saut.png')
     }
-    a = 0
-    i = 0
+
     if (nom == 'M') {
+        a = 0
         shooter.style.display = 'block'
         window.setInterval(function () {
             shooter.style.left = a + 'px'
@@ -43,6 +42,7 @@ function up() {
     }
 
     if (nom == 'K') {
+        i = 0
         shooterLeft.style.display = 'block'
         window.setInterval(function () {
             shooterLeft.style.right = i + 'px'
@@ -66,7 +66,6 @@ function up() {
             left()
         }, 10)
     }
-
 
 }
 
