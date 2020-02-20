@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onkeydown="up()">
+    <h1>Luigi Cultotte</h1>
+    <div id="bg">
+        <img id="perso" src="assets/luigi.png">
+        <img id="shooter" src="assets/culotte.png">
+    </div>
+</body>
+
+<style>
+    h1 {
+        color: white;
+        margin-left: 42%;
+        margin-top: 10%;
+        font-size: 300%;
+    }
+
+    #bg {
+        width: 100%;
+        background-image: url('https://cdn5.f-cdn.com/contestentries/1247677/21891770/5a786ab701b3d_thumb900.jpg');
+        height: 500px;
+        background-position-x: 0px;
+        border: none;
+        position: absolute;
+        bottom: 0;
+    }
+
+    body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+
+    #perso {
+        width: 6%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 1.5%;
+        background-color: transparent;
+    }
+
+    #shooter {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 1%;
+        width: 6%;
+        height: 100px;
+
+    }
+</style>
+
+<script src="main.js"></script>
+
+</html>
