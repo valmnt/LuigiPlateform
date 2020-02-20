@@ -2,13 +2,13 @@ l = 0
 function right() {
     var bg = document.getElementById('bg')
     bg.style.backgroundPositionX = l + 'px'
-    l += -5
+    l += -1
 }
 
 function left() {
     var bg = document.getElementById('bg')
     bg.style.backgroundPositionX = l + 'px'
-    l += 5
+    l += 1
 }
 
 function up() {
