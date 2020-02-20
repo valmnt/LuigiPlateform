@@ -8,15 +8,27 @@
 </head>
 
 <body onkeydown="up()">
+    <video controls autoplay id="bgvid" style="opacity: 0.5;" loop>
+        <source style="width: 100%;" src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+    </video>
     <h1>Luigi Cultotte</h1>
     <div id="bg">
-        <img id="perso" src="assets/luigi.png">
+        <img id="perso" src="assets/stay.png">
         <img id="shooter" src="assets/culotte.png">
+        <img id="shooterLeft" src="assets/culotte.png">
     </div>
 </body>
 
 <style>
+    #bgvid {
+        width: 100%;
+        height: 1100px;
+    }
+
     h1 {
+        position: absolute;
+        top: 0;
         color: white;
         margin-left: 42%;
         margin-top: 10%;
@@ -38,24 +50,39 @@
         margin: 0;
         padding: 0;
         background-color: black;
+
     }
 
     #perso {
-        width: 6%;
+        width: 4%;
         height: 100px;
         position: absolute;
         bottom: 0;
         margin-bottom: 1.5%;
         background-color: transparent;
+        margin-left: 15%;
     }
 
     #shooter {
         display: none;
         position: absolute;
         bottom: 0;
+        margin-left: 15%;
         margin-bottom: 1%;
         width: 6%;
         height: 100px;
+
+    }
+
+    #shooterLeft {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        margin-left: 15%;
+        margin-bottom: 1%;
+        width: 6%;
+        height: 100px;
+        margin-right: 80%;
 
     }
 </style>
