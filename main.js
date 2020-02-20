@@ -1,4 +1,5 @@
 l = 0
+life = 5
 function right() {
     var bg = document.getElementById('bg')
     bg.style.backgroundPositionX = l + 'px'
@@ -28,14 +29,14 @@ function up() {
         }, 200)
         character.setAttribute('src', 'assets/saut.png')
     }
-
+    a = 0
     i = 0
     if (nom == 'M') {
         shooter.style.display = 'block'
         window.setInterval(function () {
-            shooter.style.left = i + '%'
-            i += 2
-        }, 200)
+            shooter.style.left = a + 'px'
+            a += 2
+        }, 20)
     }
     else {
         shooter.style.display = 'none'
@@ -44,9 +45,9 @@ function up() {
     if (nom == 'K') {
         shooterLeft.style.display = 'block'
         window.setInterval(function () {
-            shooterLeft.style.right = i + '%'
+            shooterLeft.style.right = i + 'px'
             i += 2
-        }, 200)
+        }, 20)
     }
     else {
         shooterLeft.style.display = 'none'
